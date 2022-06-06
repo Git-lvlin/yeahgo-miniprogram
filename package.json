@@ -1,0 +1,24 @@
+{
+  "name": "yeahgo-miniprogram",
+  "version": "1.0.0",
+  "description": "appid wxb8db75a7eea8787f  汇意\r  appid wxdc1fcef98ae73d1e  聚创",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.qhhznt.com/web/yeahgo-miniprogram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.6.8",
+    "crypto-js": "^4.0.0",
+    "dayjs": "^1.10.5",
+    "js-base64": "^3.6.1",
+    "weapp-qrcode": "^1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

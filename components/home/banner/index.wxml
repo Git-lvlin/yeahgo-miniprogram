@@ -1,0 +1,35 @@
+
+<view class="banner" wx:if="{{bannerList.length}}">
+  <swiper
+    class="swiper"
+    indicator-color="#fff"
+    indicator-active-color="#d7291d"
+    autoplay
+    interval="5000"
+    duration="1000"
+    circular
+    bindchange="handleSwiperChange"
+  >
+    <swiper-item
+      class="swiper_item"
+      wx:for="{{bannerList}}"
+      wx:key="id"
+      data-data="{{item}}"
+      bindtap="onBanner"
+    >
+      <van-image
+        width="702rpx"
+        height="300rpx"
+        fit="cover"
+        src="{{item.image}}"
+      />
+    </swiper-item>
+  </swiper>
+  <view class="flex_center banner_dots">
+    <view
+      class="dots_item {{index === actIndex ? 'dots_act' : ''}}"
+      wx:for="{{bannerList}}"
+      wx:key="id"
+    />
+  </view>
+</view>
